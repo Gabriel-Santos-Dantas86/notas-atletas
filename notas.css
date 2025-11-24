@@ -1,0 +1,47 @@
+/* Estilos personalizados para o projeto de notas dos atletas */
+
+/* Animação suave para os cards dos atletas */
+.atleta-card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.atleta-card:hover {
+    transform: translateY(-2px);
+}
+
+/* Estilo personalizado para as notas ordenadas */
+.notas-lista {
+    font-family: 'Courier New', monospace;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+/* Destaque para a média válida */
+.media-destaque {
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+    border-left: 4px solid #3b82f6;
+}
+
+/* Responsividade adicional */
+@media (max-width: 768px) {
+    .container-principal {
+        margin: 1rem;
+        padding: 0.5rem;
+    }
+    
+    .card-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+/* Loading state */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Efeito de foco para acessibilidade */
+.atleta-card:focus-within {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+    outline: none;
+}
